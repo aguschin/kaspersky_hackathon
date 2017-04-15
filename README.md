@@ -1,17 +1,19 @@
-Winning solution for Hackathon on Data Analysis from "Kaspersky lab"
+### Winning solution for Hackathon on Data Analysis from "Kaspersky lab"
 https://events.kaspersky.com/hackathon/
 
-Team DMIA [Data Mining In Action]
+### Team DMIA [Data Mining In Action]:
+https://github.com/aguschin, https://github.com/canorbal, https://github.com/ohld
 
 check out our elective course on Data Mining in MIPT - https://github.com/vkantor/MIPT_Data_Mining_In_Action_2016
 
-Task - multivariate time series classification ("normal" TS vs TS with anomalies) based on Tennessee Eastman Problem http://users.abo.fi/khaggblo/RS/McAvoy.pdf
+### Task
+Multivariate time series classification ("normal" TS vs TS with anomalies) based on Tennessee Eastman Problem http://users.abo.fi/khaggblo/RS/McAvoy.pdf
 
 Detailed task description can be found in README.pdf
 
 Data can be downloaded from https://yadi.sk/d/LzWCsMmo3GvWrt
 
-Brief solution description:
+### Brief solution description:
 
 0) Train LSTM to predict timeseries on 10 ticks ahead using "normal" TS as training data. lstm_baseline_nextstep.ipynb
 1) Use LSTM to predict all TS from Train and Test and calculate new features based on error amount statistics.
