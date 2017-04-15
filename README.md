@@ -20,3 +20,5 @@ Data can be downloaded from https://yadi.sk/d/LzWCsMmo3GvWrt
 2) Train Xgboost in xgboost_baseline.ipynb (producing xgb_best_4_knn.csv).
 3) Train ExtraTrees in extratrees_baseline-window-lstm.ipynb (producing et_window_250_lstm.csv)
 4) Train KNN in KNN_baseline.ipynb (producing knn_best.csv and final mixed submission  knn_xgb_et_RANKS_FINAL_002.csv)
+
+Basically, all three models share the same features - different statistics based upon different columns and their derivatives which belong to the same file and thus have the same label (either 1 for anomalies or 0 for "normal" TS). Extratrees also have "error features" provided by LSTM predictions.
